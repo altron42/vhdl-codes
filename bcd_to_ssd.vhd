@@ -1,3 +1,7 @@
+-- Decodificador de 4 bits binario para display de 7 segmentos
+-- Micael Pimentel
+-- github.com/altron42/vhdl-codes
+
 library ieee;
 use ieee.std_logic_1164.all;
 
