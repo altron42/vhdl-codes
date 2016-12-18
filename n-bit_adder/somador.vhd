@@ -1,5 +1,5 @@
 -- Micael Pimentel
--- github.com/altron42
+-- github.com/altron42/vhdl-codes
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -7,12 +7,12 @@ use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
 entity somador is
-   generic ( word_size : natural );
+   generic ( word_size : natural );  -- Define bit amount of the full adder. Should be initialized
    port (
-	   data_A : in std_logic_vector (word_size-1 downto 0);
-		data_B : in std_logic_vector (word_size-1 downto 0);
-	   sum : out std_logic_vector (word_size-1 downto 0);
-		carry : out std_logic
+	   data_A : in std_logic_vector (word_size-1 downto 0);   -- 1st parcel 
+	   data_B : in std_logic_vector (word_size-1 downto 0);   -- 2nd parcel
+	   sum : out std_logic_vector (word_size-1 downto 0);     -- sum
+	   carry : out std_logic                                  -- carry out
 	);
 end somador;
 
